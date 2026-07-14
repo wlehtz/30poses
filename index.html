@@ -5,6 +5,50 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>36 Poses — um ensaio sobre imagem, tempo e ruído</title>
 <link rel="stylesheet" href="style.css">
+<style>
+/* ===== AJUSTES MOBILE — complementam o style.css original (mesmo breakpoint, 720px) ===== */
+@media (max-width: 720px) {
+
+  /* o style.css original esconde nav.top inteiro em mobile (display:none),
+     sem nenhum jeito de acessar o menu. Aqui ele volta, quebrando em várias linhas. */
+  header.top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 18px 5vw;
+  }
+  nav.top {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    width: 100%;
+  }
+  nav.top a { font-size: 11px; }
+
+  .frame { padding: 70px 6vw; }
+
+  .hero { min-height: auto; padding: 50px 6vw 110px; }
+  .hero .datestamp { right: 6vw; bottom: 28px; font-size: 12px; padding: 5px 8px; }
+  .hero .scrollcue { left: 6vw; bottom: 14px; }
+  .hero p.lede { font-size: 1.02rem; margin-top: 20px; }
+
+  .frame-badge { font-size: 10px; padding: 5px 8px; top: 12px; right: 12px; }
+
+  /* .strip é flexbox, não grid — os cards de Dados/Contraponto empilham em coluna cheia */
+  .strip { flex-direction: column; align-items: stretch; }
+  .print { width: 100%; transform: none !important; }
+
+  .publi { padding: 60px 6vw; }
+  .publi-badge { top: 18px; right: 6vw; }
+  .publi-card { padding: 22px 18px; }
+
+  /* .footer .cols também é flexbox — empilha em coluna cheia */
+  .footer { padding: 50px 6vw 40px; }
+  .footer .cols { flex-direction: column; gap: 30px; }
+
+  blockquote { font-size: 1.05rem; padding-left: 16px; }
+}
+</style>
 </head>
 <body>
 <div class="grain"></div>
