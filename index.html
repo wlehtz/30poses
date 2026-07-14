@@ -10,9 +10,15 @@
 
 <div class="grain"></div>
 <div class="vignette"></div>
+<div class="flash-overlay" id="flashOverlay"></div>
 
 <div class="filmstrip" id="filmstrip"></div>
-<div class="frame-badge" id="frameBadge">QUADRO <span>00 / 08</span></div>
+<div class="frame-badge" id="frameBadge">QUADRO <span>00 / 09</span></div>
+
+<div class="fx-dock">
+  <button class="fx-btn flash" id="flashBtn" title="Disparar flash" aria-label="Disparar flash">⚡</button>
+  <button class="fx-btn negative-toggle" id="negBtn" title="Modo negativo" aria-label="Alternar modo negativo">NEG</button>
+</div>
 
 <div class="wrap">
 
@@ -26,6 +32,7 @@
     <a href="#dados">Dados</a>
     <a href="#contraponto">Contraponto</a>
     <a href="#ensaio">Ensaio</a>
+    <a href="#sobre">Sobre</a>
     <a href="https://instagram.com/wlehtz" target="_blank" rel="noopener">@wlehtz</a>
   </nav>
 </header>
@@ -68,7 +75,7 @@
   <div class="frame-inner">
     <div class="eyebrow">Quadro 03 — o rolo</div>
     <h2 class="title-l">Fotos tiradas por mim,<br>na minha analógica (descartavel)</h2>
-    <p>Esse é o contato do rolo de verdade — sem tratamento, sem IA, só o que a luz fez com o filme.</p>
+    <p>Esse é o contato do rolo de verdade — sem tratamento, sem IA, só o que a luz fez com o filme. <span style="font-family:'Space Mono',monospace; font-size:12px;">(clica numa foto pro obturador disparar)</span></p>
     <div class="contact-sheet">
       <figure class="neg"><img src="ima1.jpeg" alt="Prédios do centro de São Paulo vistos de baixo, céu azul"><figcaption>01A</figcaption></figure>
       <figure class="neg"><img src="ima2.jpeg" alt="Banca de rua com pessoas sentadas em cadeiras de praia"><figcaption>02A</figcaption></figure>
@@ -76,8 +83,6 @@
       <figure class="neg"><img src="ima4.jpeg" alt="Esquina de rua com carro branco e cones de trânsito"><figcaption>04A</figcaption></figure>
       <figure class="neg"><img src="ima5.jpeg" alt="Interior escuro de uma loja, silhuetas em frente a geladeiras"><figcaption>05A</figcaption></figure>
       <figure class="neg"><img src="ima6.jpeg" alt="Postes de luz à noite, imagem escura e granulada"><figcaption>06A</figcaption></figure>
-      <figure class="neg"><img src="ima7.jpeg" alt="Rapaz em um sofá segurando o celular para fotografar"><figcaption>07A</figcaption></figure>
-      <figure class="neg"><img src="ima8.jpeg" alt="DJ tocando em uma varanda à noite"><figcaption>08A</figcaption></figure>
       <figure class="neg"><img src="ima9.jpeg" alt="Duas pessoas conversando sentadas em um sofá"><figcaption>09A</figcaption></figure>
       <figure class="neg"><img src="ima10.jpeg" alt="Grupo de pessoas em cadeiras de praia à noite"><figcaption>10A</figcaption></figure>
       <figure class="neg"><img src="ima11.jpeg" alt="Mão segurando um copinho de café diante de um painel colorido"><figcaption>11A</figcaption></figure>
@@ -87,6 +92,14 @@
       <figure class="neg"><img src="ima15.jpeg" alt="Palco iluminado de azul visto de longe em um show"><figcaption>15A</figcaption></figure>
       <figure class="neg"><img src="ima16.jpeg" alt="Rapaz apontando a câmera do celular para a foto"><figcaption>16A</figcaption></figure>
       <figure class="neg"><img src="ima17.jpeg" alt="Telas de projeção ao fundo em um ambiente escuro"><figcaption>17A</figcaption></figure>
+      <figure class="neg"><img src="ima18.jpeg" alt="[Descreva a foto 18]"><figcaption>18A</figcaption></figure>
+      <figure class="neg"><img src="ima19.jpeg" alt="[Descreva a foto 19]"><figcaption>19A</figcaption></figure>
+      <figure class="neg"><img src="ima20.jpeg" alt="[Descreva a foto 20]"><figcaption>20A</figcaption></figure>
+      <figure class="neg"><img src="ima21.jpeg" alt="[Descreva a foto 21]"><figcaption>21A</figcaption></figure>
+      <figure class="neg"><img src="ima22.jpeg" alt="[Descreva a foto 22]"><figcaption>22A</figcaption></figure>
+      <figure class="neg"><img src="ima23.jpeg" alt="[Descreva a foto 23]"><figcaption>23A</figcaption></figure>
+      <figure class="neg"><img src="ima24.jpeg" alt="[Descreva a foto 24]"><figcaption>24A</figcaption></figure>
+      <figure class="neg"><img src="ima25.jpeg" alt="[Descreva a foto 25]"><figcaption>25A</figcaption></figure>
     </div>
     <p style="margin-top:34px; font-family:'Space Mono',monospace; font-size:12px; color:var(--ink-soft);">rolo revelado · sem edição digital · <a href="https://instagram.com/wlehtz" target="_blank" rel="noopener">@wlehtz</a></p>
   </div>
@@ -201,6 +214,19 @@
   </div>
 </section>
 
+<section class="frame" id="sobre" data-num="9">
+  <div class="frame-inner narrow">
+    <div class="eyebrow">Quadro 07 — quem está atrás da câmera</div>
+    <h2 class="title-l">Sobre mim</h2>
+    <p>[Seu nome] — moro em São Paulo e ando com uma câmera descartável no bolso mais do que deveria. Esse site nasceu de um rolo revelado na Kodak Máfia e da vontade de escrever sobre por que prefiro esperar dias por trinta e seis fotos do que ter milhares salvas no celular.</p>
+    <p>Fotografo rua, shows e as pessoas ao meu redor sem pedir pra sorrir pra câmera. [Complete com o que você faz / estuda / trabalha aqui]. Esse espaço é parte ensaio, parte portfólio, parte desculpa pra comprar mais filme.</p>
+    <div class="sobre-tags">
+      <div class="tag">São Paulo</div><div class="tag">filme 35mm</div><div class="tag">rua e shows</div><div class="tag">Kodak Máfia</div>
+    </div>
+    <p class="sobre-social">Me encontra em <a href="https://instagram.com/wlehtz" target="_blank" rel="noopener">@wlehtz</a> — rolo sempre carregado.</p>
+  </div>
+</section>
+
 </div>
 
 <footer class="footer">
@@ -208,7 +234,7 @@
   <div class="big">FIM DO ROLO</div>
   <p style="color:var(--chrome); max-width:60ch; font-family:'Source Serif 4',serif; font-size:14px; line-height:1.8;">Trinta e seis poses não é sobre câmera — é sobre atenção. A próxima foto que você tirar, analógica ou não, pode ser a primeira em muito tempo que você realmente escolhe fazer.</p>
   <div class="cols">
-    <div><h5>Quadros</h5><p>01 Manifesto<br>02 Estética<br>03 O rolo<br>04 Kodak Máfia (publi)<br>05 Dados<br>06 Contraponto<br>07 Ensaio</p></div>
+    <div><h5>Quadros</h5><p>01 Manifesto<br>02 Estética<br>03 O rolo<br>04 Kodak Máfia (publi)<br>05 Dados<br>06 Contraponto<br>07 Ensaio<br>08 Sobre mim</p></div>
     <div><h5>Fontes dos dados</h5><p>DataReportal · Comitê Gestor da Internet no Brasil · Jornal da USP · Fujifilm · Leica · relatórios de mercado de filme fotográfico (2024–2026)</p></div>
     <div><h5>Ficha</h5><p>Ensaio visual<br>Feito por mim, 2026<br>Fotos e site, sem geração por IA nas imagens</p></div>
   </div>
