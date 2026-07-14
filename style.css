@@ -265,4 +265,14 @@ blockquote{
 }
 .footer .cols{ display:flex; flex-wrap:wrap; gap:40px; margin-top:30px; }
 .footer .cols div{ min-width:180px; }
-.footer .cols h5{ color:var(--film-red);
+.footer .cols h5{ color:var(--film-red); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:10px; font-size:11px;}
+.footer .cols p{ color:var(--chrome); max-width:none; font-size:12px; line-height:1.7; }
+.sprockrow{ display:flex; gap:8px; margin:36px 0; opacity:0.5; }
+.sprockrow span{ width:10px; height:14px; background:var(--paper); flex:none; }
+
+/* utility */
+.tag{
+  display:inline-block; font-family:'Space Mono', monospace; font-size:11px;
+  border:1px solid var(--ink-soft); padding:3px 8px; margin:0 8px 8px 0; color:var(--ink-soft);
+}
+.divider{ height:1px; background:repeating-linear-gradient(90deg, var(--ink-soft) 0 6px, transparent 6px 12px); margin:44px 0; opacity:0.5;}
