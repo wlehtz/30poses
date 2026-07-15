@@ -6,11 +6,8 @@
 <title>30 Poses. um ensaio sobre imagem, tempo e ruído</title>
 <link rel="stylesheet" href="style.css">
 <style>
-/* ===== AJUSTES MOBILE. complementam o style.css original (mesmo breakpoint, 720px) ===== */
 @media (max-width: 720px) {
 
-  /* o style.css original esconde nav.top inteiro em mobile (display:none),
-     sem nenhum jeito de acessar o menu. Aqui ele volta, quebrando em várias linhas. */
   header.top {
     flex-direction: column;
     align-items: flex-start;
@@ -33,16 +30,11 @@
   .hero p.lede { font-size: 1.02rem; margin-top: 20px; }
 
   .frame-badge { font-size: 10px; padding: 5px 8px; top: 12px; right: 12px; }
-
-  /* .strip é flexbox, não grid. os cards de Dados/Contraponto empilham em coluna cheia */
   .strip { flex-direction: column; align-items: stretch; }
   .print { width: 100%; transform: none !important; }
-
   .publi { padding: 60px 6vw; }
   .publi-badge { top: 18px; right: 6vw; }
   .publi-card { padding: 22px 18px; }
-
-  /* .footer .cols também é flexbox. empilha em coluna cheia */
   .footer { padding: 50px 6vw 40px; }
   .footer .cols { flex-direction: column; gap: 30px; }
 
@@ -50,8 +42,6 @@
 }
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&display=swap');
-
-/* ===== toques anti-IA. imperfeição proposital, marginália escrita à mão ===== */
 .marginalia{
   font-family:'Caveat', cursive;
   color: var(--film-red);
@@ -61,8 +51,6 @@
   transform: rotate(-3deg);
 }
 .marginalia.soft{ color: var(--ink-soft); transform: rotate(2deg); }
-
-/* fita adesiva nas fotos do contact sheet. sem mexer no HTML, só CSS */
 .neg{ overflow: visible; }
 .neg::after{
   content:''; position:absolute; top:-9px; left:22%;
@@ -74,13 +62,9 @@
 }
 .neg:nth-child(2n)::after{ left:auto; right:20%; transform: rotate(4deg); }
 .neg:nth-child(3n)::after{ left:40%; transform: rotate(-2deg); }
-
-/* nenhuma foto perfeitamente alinhada. como um contact sheet cortado à mão */
 .neg:nth-child(3n){ transform: rotate(-1deg); }
 .neg:nth-child(4n){ transform: rotate(0.8deg); }
 .neg:nth-child(5n+1){ transform: rotate(-0.6deg); }
-
-/* cards de estética levemente desalinhados, tipo recorte de revista colado */
 .moodcard:nth-child(2n){ transform: rotate(0.6deg); }
 .moodcard:nth-child(2n+1){ transform: rotate(-0.5deg); }
 
@@ -221,7 +205,7 @@
 <p style="margin-top:38px;">O contraste Brasil×Japão chama atenção: um país tido como referência em tecnologia registra menos da metade do tempo de tela do brasileiro médio. Tempo de tela não é sinônimo de avanço tecnológico. é uma escolha cultural sobre onde colocar atenção. E atenção, hoje, é o produto mais monetizado que existe: cada minuto de tela vira dado, anúncio ou engajamento.</p>
 </div>
 </section>
-
+  
 <section class="frame" id="contraponto" data-num="6">
 <div class="frame-inner">
 <div class="eyebrow">Quadro 05. a virada</div>
@@ -252,7 +236,7 @@
 <p style="margin-top:38px;">O interessante é que quem volta ao filme, na maioria das vezes, não está trocando o celular por ele. está usando os dois. A câmera analógica virou complemento, não substituta: uma forma deliberada de desacelerar em meio a festas, viagens e encontros que, no resto do tempo, seguem sendo vividos e fotografados no digital. É uma escolha de <strong>ritmo</strong>, não de nostalgia pura.</p>
 </div>
 </section>
-
+  
 <section class="frame" id="ensaio" data-num="7">
 <div class="frame-inner narrow">
 <div class="eyebrow">Quadro 06. a reflexão</div>
@@ -269,7 +253,6 @@
 <div class="frame-inner narrow">
 <div class="eyebrow">Quadro 07. quem fez isso</div>
 <h2 class="title-l">Sobre mim</h2>
-<!-- TODO: texto de placeholder — ajuste com base no seu Instagram real, não consegui acessá-lo diretamente -->
 <p>Sou a Letícia, estudante de Análise e Desenvolvimento de Sistemas e alguém que acredita que tecnologia vai muito além do código. Sempre gostei de criar, fotografar e encontrar significado nas pequenas coisas. Este projeto nasceu da vontade de olhar para a fotografia analógica e para a estética dos anos 2000 como um contraponto ao ritmo acelerado das tecnologias atuais. Em um mundo onde tudo é instantâneo, automatizado e descartável, fotografar em filme nos obriga a esperar, observar e dar valor a cada imagem. Mais do que um portfólio, este é um convite para refletir sobre memória, tempo e a forma como escolhemos viver e registrar nossas histórias.
 </p>
 <a class="publi-cta" href="https://instagram.com/wlehtz" target="_blank" rel="noopener">Seguir @wlehtz →</a>
@@ -313,7 +296,6 @@
 </div>
 <p style="margin-top:34px; color:var(--lime); font-family:'Space Mono',monospace; font-size:13px;">© 2026. feito por mim · Instagram <a href="https://instagram.com/wlehtz" target="_blank" rel="noopener" style="color:var(--lime); text-decoration:underline;">@wlehtz</a></p>
 </footer>
-
 <script src="script.js"></script>
 </body>
 </html>
