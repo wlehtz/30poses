@@ -22,7 +22,7 @@ O site é dividido em 9 quadros, como um contato de filme:
 
 ## Destaques técnicos
 
-- Contador de quadro dinâmico (`QUADRO 03 / 12`) usando `IntersectionObserver`,
+- Contador de quadro dinâmico (`QUADRO 03 / 09`) usando `IntersectionObserver`,
   que atualiza conforme a rolagem da página.
 - Geração dinâmica das "perfurações" laterais de filme fotográfico, recalculada
   a cada redimensionamento da janela para manter a estética responsiva.
